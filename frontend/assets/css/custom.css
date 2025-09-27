@@ -1,5 +1,7 @@
-.custom-mail{
-    margin-left: -22px;
+@media (min-width: 1400px) {
+    .custom-mail {
+        margin-left: -22px;
+    }
 }
 
 /* custom bullet css */
@@ -19,9 +21,42 @@
 }
 
 .portfolio-img {
-    width: 100%; /* full width of the card */
-    height: 200px; /* fixed height */
-    object-fit: fill; /* keeps image center-cropped and avoids distortion */
-    border-radius: 8px; /* optional: slight rounded corners */
+    width: 100%;
+    /* full width of the card */
+    height: 200px;
+    /* fixed height */
+    object-fit: fill;
+    /* keeps image center-cropped and avoids distortion */
+    border-radius: 8px;
+    /* optional: slight rounded corners */
 }
 
+@media (max-width: 576px) {
+    .title-area{
+        text-align: center !important;
+    }
+    .title{
+        margin-bottom: -5px !important;
+        font-size: 25px !important;
+    }
+
+    .phone {
+        margin-left: 0px !important;
+    }
+
+    .custom-mail {
+        margin-left: 0px;
+    }
+
+    .mail-wrap {
+        word-wrap: break-word;
+        /* break long words gracefully */
+        overflow-wrap: anywhere;
+        /* modern alternative */
+        white-space: normal;
+    }
+    .nav-content-padding{
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}

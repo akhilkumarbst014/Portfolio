@@ -851,7 +851,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
     };
 
     try {
-        const response = await fetch('https://akhilesh-kumar-portfolio.onrender.com/send-email', { // update URL if needed
+        const response = await fetch('https://akhilesh-kumar-portfolio.onrender.com/send-email', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(formData)
